@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Datatables -->
+    <link rel="stylesheet" href="./vendor/css/dataTables.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/icon.png" type="image/png" sizes="16x16">
+    <title>Admin Template</title>
+</head>
+<body>
+    <div class="auth-container bg-dark">
+        <div class="login row bg-secondary">
+            <div class="col-md-6 col-12 imgBx"></div>
+            <div class="col-md-6 col-12 authBx">
+                <h4 class="text-white text-center auth-title">Log In</h4>
+                <small id="error-message" class="text-danger">Invalid Credentials.</small>
+                <form action="#" method="post">
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" class="form-control">
+                        <small id="email-error" class="text-danger">Email required</small>
+                    </div>
+                    <div class="form-field">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" class="form-control">
+                        <small id="password-error" class="text-danger">Password required</small>
+                    </div>
+                    <div class="check-field">
+                        <input type="checkbox" name="remember" id="remember-me">
+                        <label class="text-white">Remember Me</label>
+                    </div>
+                    <div class="btn-container">
+                        <a href="#" class="btn bg-primary text-white">Log In</a>
+                    </div>
+                    <p class="text-white text-center">Don't have an account? <a href="register.html" class="text-info">Sign Up</a></p>
+                    <p class="text-center"><a href="forgot-password.html" class="text-info">Forgot Password?</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- JS Files -->
+    <!-- Jquery -->
+    <script src="vendor/js/jquery/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Chart Js -->
+    <script src="vendor/js/chart.js/Chart.min.js"></script>
+    <script src="./js/demo/chart-area-demo.js"></script>
+    <script src="./js/demo/chart-pie-demo.js"></script>
+    <!-- Datatables Js -->
+    <script src="vendor/js/datatables/jquery.dataTables.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

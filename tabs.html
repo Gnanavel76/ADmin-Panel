@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Datatables -->
+    <link rel="stylesheet" href="./vendor/css/dataTables.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/icon.png" type="image/png" sizes="16x16">
+    <title>Admin Template</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar" class="bg-secondary">
+            <i id="close" class="fa fa-times text-white"></i>
+            <div class="logo-container">
+                <img src="./images/icon.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="dashboard.html">
+                            <i class="fas fa-fw fa-tachometer-alt"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown">
+                            <i class="fas fa-fw fa-folder"></i>
+                            <span>Pages</span>
+                        </a>
+                        <div class="dropdown-menu bg-dark">
+                            <a href="login.html">Login</a>
+                            <a href="register.html">Register</a>
+                            <a href="forgot-password.html">Forgot Password</a>
+                            <a href="404.html">404 Page</a>
+                            <a href="blank.html">Blank Page</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="charts.html">
+                            <i class="fas fa-fw fa-chart-area"></i>
+                            <span>Charts</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tables.html">
+                            <i class="fas fa-fw fa-table"></i>
+                            <span>Tables</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cards.html">
+                            <i class="far fa-fw fa-credit-card"></i>
+                            <span>Cards</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tabs.html" class="active1">
+                            <i class="fas fa-fw fa-tablet-alt"></i>
+                            <span>Navigation Tabs</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Main -->
+        <main class="bg-dark">
+            <div class="topbar">
+                <i class="fa fa-bars" id="hamburger"></i>
+                <div class="search-bar bg-secondary text-white">
+                    <input type="text" name="search" class="form-control" placeholder="Search">
+                    <i class="fas fa-search" id="search"></i>
+                </div>
+                <div class="profile bg-secondary dropdown">
+                    <img src="./images/profile_pic.png" alt="Profile Image" class="profile-img">
+                    <h5 class="text-white profile-name">Venky</h5>
+                    <i class="text-white fas fa-chevron-down dropdown-toggle"></i>
+                    <div class="dropdown-menu bg-dark">
+                        <a class="dropdown-item text-white" href="#">Profile</a>
+                        <a class="dropdown-item text-white" href="#">Settings</a>
+                        <a class="dropdown-item text-white" href="#">Activity Log</a>
+                        <a class="dropdown-item text-white" href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-body">
+                <div class="container-element">
+                    <h4 class="container-title">
+                        Navigation Tabs
+                    </h4>
+                    <div class="card bg-secondary">
+                        <div class="card-header tabs">
+                            <a href="#html" class="text-white active">
+                                <i class="fab fa-fw fa-html5"></i>
+                                <span>Home</span>
+                            </a>
+                            <a href="#css" class="text-white">
+                                <i class="fab fa-fw fa-css3-alt"></i>
+                                <span>CSS</span>
+                            </a>
+                            <a href="#js" class="text-white">
+                                <i class="fab fa-fw fa-js-square"></i>
+                                <span>JS</span>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <div class="tab-panel active" id="html">
+                                <p class="text-white">HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It is the fifth and last[3] major HTML version that is a World Wide Web Consortium (W3C) recommendation. The current specification is known as the HTML Living Standard. It is maintained by a consortium of the major browser vendors (Apple, Google, Mozilla, and Microsoft), the Web Hypertext Application Technology Working Group (WHATWG).</p>
+                                <p class="text-white">HTML5 includes detailed processing models to encourage more interoperable implementations; it extends, improves, and rationalizes the markup available for documents and introduces markup and application programming interfaces (APIs) for complex web applications.[7] For the same reasons, HTML5 is also a candidate for cross-platform mobile applications because it includes features designed with low-powered devices in mind.</p>
+                            </div>
+                            <div class="tab-panel" id="css">
+                                <p class="text-white">Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</p>
+                                <p class="text-white">CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.[3] This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file which reduces complexity and repetition in the structural content as well as enabling the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.</p>
+                            </div>
+                            <div class="tab-panel" id="js">
+                                <p class="text-white">JavaScript often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.[9] JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.</p>
+                                <p class="text-white">Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.[10] Over 97% of websites use it client-side for web page behavior,[11] often incorporating third-party libraries.[12] All major web browsers have a dedicated JavaScript engine to execute the code on the user's device.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p class="text-center text-white">Copyrights &copy; Your Website 2021</p>
+            </footer>
+        </main>
+    </div>
+    <!-- JS Files -->
+    <!-- Jquery -->
+    <script src="vendor/js/jquery/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Chart Js -->
+    <script src="vendor/js/chart.js/Chart.min.js"></script>
+    <script src="./js/demo/chart-area-demo.js"></script>
+    <script src="./js/demo/chart-pie-demo.js"></script>
+    <!-- Datatables Js -->
+    <script src="vendor/js/datatables/jquery.dataTables.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

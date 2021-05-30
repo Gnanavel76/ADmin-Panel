@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Datatables -->
+    <link rel="stylesheet" href="./vendor/css/dataTables.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/icon.png" type="image/png" sizes="16x16">
+    <title>Admin Template</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar" class="bg-secondary">
+            <i id="close" class="fa fa-times text-white"></i>
+            <div class="logo-container">
+                <img src="./images/icon.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="dashboard.html" class="active">
+                            <i class="fas fa-fw fa-tachometer-alt"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown">
+                            <i class="fas fa-fw fa-folder"></i>
+                            <span>Pages</span>
+                        </a>
+                        <div class="dropdown-menu bg-dark">
+                            <a href="login.html">Login</a>
+                            <a href="register.html">Register</a>
+                            <a href="forgot-password.html">Forgot Password</a>
+                            <a href="404.html">404 Page</a>
+                            <a href="blank.html">Blank Page</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="charts.html">
+                            <i class="fas fa-fw fa-chart-area"></i>
+                            <span>Charts</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tables.html">
+                            <i class="fas fa-fw fa-table"></i>
+                            <span>Tables</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="cards.html">
+                            <i class="far fa-fw fa-credit-card"></i>
+                            <span>Cards</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tabs.html">
+                            <i class="fas fa-fw fa-tablet-alt"></i>
+                            <span>Navigation Tabs</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- Main -->
+        <main class="bg-dark">
+            <div class="topbar">
+                <i class="fa fa-bars" id="hamburger"></i>
+                <div class="search-bar bg-secondary text-white">
+                    <input type="text" name="search" class="form-control" placeholder="Search">
+                    <i class="fas fa-search" id="search"></i>
+                </div>
+                <div class="profile bg-secondary dropdown">
+                    <img src="./images/profile_pic.png" alt="Profile Image" class="profile-img">
+                    <h5 class="text-white profile-name">Venky</h5>
+                    <i class="text-white fas fa-chevron-down dropdown-toggle"></i>
+                    <div class="dropdown-menu bg-dark">
+                        <a class="dropdown-item text-white" href="#">Profile</a>
+                        <a class="dropdown-item text-white" href="#">Settings</a>
+                        <a class="dropdown-item text-white" href="#">Activity Log</a>
+                        <a class="dropdown-item text-white" href="#">Logout</a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-body">
+                <div class="container-element">
+                    <h4 class="container-title">Dashboard</h4>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="card bg-secondary card-style">
+                                <div class="row aic">
+                                    <div class="col-8">
+                                        <h5 class="text-white">Views</h5>
+                                        <h5 class="card-title text-white">500+</h5>
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="fas fa-2x fa-eye text-white"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="card bg-secondary card-style">
+                                <div class="row aic">
+                                    <div class="col-8">
+                                        <h5 class="text-white">Tasks</h5>
+                                        <h5 class="card-title text-white">40</h5>
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="fas fa-2x fa-tasks text-white"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="card bg-secondary card-style">
+                                <div class="row aic">
+                                    <div class="col-8">
+                                        <h5 class="text-white">Downloads</h5>
+                                        <h5 class="card-title text-white">50+</h5>
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="fas fa-2x fa-download text-white"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <div class="card bg-secondary card-style">
+                                <div class="row aic">
+                                    <div class="col-8">
+                                        <h5 class="text-white">Likes</h5>
+                                        <span class="card-title text-white">1000</span>
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="fas fa-2x fa-thumbs-up text-white"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-element chart-container">
+                    <div class="row">
+                        <div class="col-lg-8 col-12">
+                            <div class="card bg-secondary">
+                                <div class="card-header">
+                                    <h6 class=" card-title text-white">Average Monthly Temperature Farenheit</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <canvas id="myAreaChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-12">
+                            <div class="card bg-secondary">
+                                <div class="card-header">
+                                    <h6 class="card-title text-white">Storage Details</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <canvas id="myPieChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="card bg-secondary">
+                                <div class="card-header">
+                                    <h6 class="card-title text-white">Progress Bar</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="progress-item">
+                                        <div class="progress-title">
+                                            <h6 class="text-white">HTML</h6>
+                                            <h6 class="text-white">90%</h6>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div style="width:90%" class="progress bg-primary"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-item">
+                                        <div class="progress-title">
+                                            <h6 class="text-white">CSS</h6>
+                                            <h6 class="text-white">80%</h6>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div style="width:80%" class="progress bg-warning"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-item">
+                                        <div class="progress-title">
+                                            <h6 class="text-white">Javascript</h6>
+                                            <h6 class="text-white">20%</h6>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div style="width:20%" class="progress bg-success"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-item">
+                                        <div class="progress-title">
+                                            <h6 class="text-white">PHP</h6>
+                                            <h6 class="text-white">60%</h6>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div style="width:60%" class="progress bg-danger"></div>
+                                        </div>
+                                    </div>
+                                    <div class="progress-item">
+                                        <div class="progress-title">
+                                            <h6 class="text-white">Python</h6>
+                                            <h6 class="text-white">40%</h6>
+                                        </div>
+                                        <div class="progress-bar">
+                                            <div style="width:40%" class="progress bg-info"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="card bg-secondary">
+                                <div class="card-body developed-by">
+                                    <div class="imgBx">
+                                        <img src="./images/developed.jpg" alt="Gnanavel">
+                                    </div>
+                                    <h3 class="text-center text-white">GP Admin Panel</h3>
+                                    <h4 class="text-center text-white">Developed By - Gnanavel</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-element">
+                        <h4 class="container-title text-white">Colors</h4>
+                        <div class="row">
+                            <div class="col-lg-3 col-12">
+                                <div class="card bg-primary text-white text-center">
+                                    <p>Primary</p>
+                                    <h6>#2697ff</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-12">
+                                <div class="card bg-success text-white text-center">
+                                    <p>Success</p>
+                                    <h6>#19E9AA</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-12">
+                                <div class="card bg-info text-white text-center">
+                                    <p>Info</p>
+                                    <h6>#19B7E9</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-12">
+                                <div class="card bg-warning text-white text-center">
+                                    <p>Warning</p>
+                                    <h6>#FFB443</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-12">
+                                <div class="card bg-danger text-white text-center">
+                                    <p>Danger</p>
+                                    <h6>#FF4343</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-12">
+                                <div class="card bg-secondary text-white text-center">
+                                    <p>Secondary</p>
+                                    <h6>#2a2d3e</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-12">
+                                <div class="card bg-light text-dark text-center">
+                                    <p>Light</p>
+                                    <h6>#f8f9fc</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-12">
+                                <div class="card bg-dark text-white text-center">
+                                    <p>Dark</p>
+                                    <h6>#212332</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p class="text-center text-white">Copyrights &copy; Your Website 2021</p>
+            </footer>
+        </main>
+    </div>
+    <!-- JS Files -->
+    <!-- Jquery -->
+    <script src="vendor/js/jquery/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Chart Js -->
+    <script src="vendor/js/chart.js/Chart.min.js"></script>
+    <script src="./js/demo/chart-area-demo.js"></script>
+    <script src="./js/demo/chart-pie-demo.js"></script>
+    <!-- Datatables Js -->
+    <script src="vendor/js/datatables/jquery.dataTables.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

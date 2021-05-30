@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Datatables -->
+    <link rel="stylesheet" href="./vendor/css/dataTables.min.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/icon.png" type="image/png" sizes="16x16">
+    <title>Admin Template</title>
+</head>
+<body>
+    <div class="auth-container bg-dark">
+        <div class="register row bg-secondary">
+            <div class="col-lg-6 col-12 imgBx"></div>
+            <div class="col-lg-6 col-12 authBx">
+                <h4 class="text-white text-center auth-title">Sign Up</h4>
+                <small id="success-message" class="text-success">Verification link sent to registered email address.</small>
+                <form action="#" method="post">
+                    <div class="row">
+                        <div class="col-6 form-field">
+                            <label for="firstname">Firstname</label>
+                            <input type="text" id="firstname" name="firstname" class="form-control">
+                            <small id="first-name-error" class="text-danger">Firstname required</small>
+                        </div>
+                        <div class="col-6 form-field">
+                            <label for="lastname">Lastname</label>
+                            <input type="text" id="lastname" name="lastname" class="form-control">
+                            <small id="last-name-error" class="text-danger">Lastname required</small>
+                        </div>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" class="form-control">
+                        <small id="email-error" class="text-danger">Email required</small>
+                    </div>
+                    <div class="form-field">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" class="form-control">
+                        <small id="password-error" class="text-danger">Password required</small>
+                    </div>
+                    <div class="form-field">
+                        <label for="cpassword">Confirm Password</label>
+                        <input type="password" id="cpassword" name="cpassword" class="form-control">
+                        <small id="cpassword-error" class="text-danger">Password mismatch</small>
+                    </div>
+                    <div class="btn-container">
+                        <a href="#" class="btn bg-primary text-white">Sign Up</a>
+                    </div>
+                    <p class="text-white text-center">Already have an account. <a href="login.html" class="text-info text-center">Login</a></p>
+                    <div class="other-auth">
+                        <a href="#" class="btn bg-danger text-white">
+                            <i class="fab fa-fw fa-google"></i>
+                            <span>Sign Up with Google</span>
+                        </a>
+                        <a href="#" class="btn bg-info text-white">
+                            <i class="fab fa-fw fa-facebook-f"></i>
+                            <span>Sign Up with Facebook</span>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- JS Files -->
+    <!-- Jquery -->
+    <script src="vendor/js/jquery/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Chart Js -->
+    <script src="vendor/js/chart.js/Chart.min.js"></script>
+    <script src="./js/demo/chart-area-demo.js"></script>
+    <script src="./js/demo/chart-pie-demo.js"></script>
+    <!-- Datatables Js -->
+    <script src="vendor/js/datatables/jquery.dataTables.min.js"></script>
+    <!-- Custom JS -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
