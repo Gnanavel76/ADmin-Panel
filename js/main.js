@@ -7,6 +7,9 @@ $(document).ready(function(){
         if(!$(e.target).hasClass('dropdown-toggle') && !$(e.target).hasClass('dropdown-menu')){
             $(".dropdown").removeClass("active");
         }
+        if(!$(e.target).hasClass(".modal") && $(e.target).data('toggle')!="modal"){
+            $('.modal').removeClass('active');
+        }
     })
 
     // $('main').height($("#sidebar").prop('scrollHeight')+10+'px');
@@ -56,5 +59,14 @@ $(document).ready(function(){
     $(".dropdown-toggle").on("click",function(e){
         let dropdownMenu = $(this).parent();
         dropdownMenu.toggleClass("active");
+    })
+
+    $("a[data-toggle='modal']").on("click",function(e){
+        e.preventDefault();
+        let modal_id = $(this).attr('href');
+        $(modal_id).addClass('active');
+    })
+    $('#modal-close').on('click',function(){
+        $(this).parent().parent().removeClass('active');
     })
 });

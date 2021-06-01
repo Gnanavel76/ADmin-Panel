@@ -90,6 +90,9 @@
                 </div>
             </div>
             <div class="main-body">
+                <div class="btn-container open-modal-btn">
+                    <a href="#modal" class="btn bg-primary text-white" data-toggle="modal">Open Modal</a>
+                </div>
                 <div class="container-element">
                     <h4 class="container-title">Dashboard</h4>
                     <div class="row">
@@ -299,9 +302,21 @@
             </footer>
         </main>
     </div>
+    <div class="modal bg-dark" id="modal">
+        <div class="modal-header">
+            <h3 class="text-white">Modal Title</h3>
+            <i class="fa fa-fw fa-times text-white" id="modal-close"></i>
+        </div>
+        <div class="modal-body">
+            <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur veritatis repellat nobis cum aliquid molestias voluptas consequuntur atque deserunt repellendus.</p>
+            <div class="btn-container">
+                <a href="#" class="text-white btn bg-primary">Modal Button</a>
+            </div>
+        </div>
+    </div>
     <!-- JS Files -->
     <!-- Jquery -->
-    <script src="vendor/js/jquery/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="vendor/js/jquery/jquery.min.js"></script>
 
     <!-- Chart Js -->
     <script src="vendor/js/chart.js/Chart.min.js"></script>
